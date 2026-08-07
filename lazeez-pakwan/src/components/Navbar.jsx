@@ -1,19 +1,28 @@
-function Navbar() {
-  return (
-    <nav>
-      <h1>Lazeez Pakwan</h1>
+// import { NavLink } from "react-router-dom";
+// import "./Navbar.css";
 
-      <ul>
-        <li>Home</li>
-        <li>Menu</li>
-        <li>Specials</li>
-        <li>Catering</li>
-        <li>Order</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
-  );
-}
+// function Navbar() {
+//   return (
+//     <nav className="navbar">
+//       <div className="navbar-container">
 
-export default Navbar;
+//       <NavLink to= "/" className="navbar-logo">
+//       Lazeez Pakwan
+//       </NavLink>
+
+//       <ul className="navbar-links">
+//         <li>
+//           <NavLink to="/">Home</NavLink>
+//           </li>
+//         <li>Menu</li>
+//         <li>Specials</li>
+//         <li>Catering</li>
+//         <li>Order</li>
+//         <li>About</li>
+//         <li>Contact</li>
+//       </ul>
+//     </nav>
+//   );
+// }
+
+// export default Navbar;
