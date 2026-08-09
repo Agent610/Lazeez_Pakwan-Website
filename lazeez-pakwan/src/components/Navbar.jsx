@@ -15,27 +15,27 @@ function Navbar() {
           </li>
 
           <li>
-            <NavLink to="/">Menu</NavLink>
+            <NavLink to="/menu">Menu</NavLink>
           </li>
 
           <li>
-            <NavLink to="/">Specials</NavLink>
+            <NavLink to="/specials">Specials</NavLink>
           </li>
 
           <li>
-            <NavLink to="/">Catering</NavLink>
+            <NavLink to="/catering">Catering</NavLink>
           </li>
 
           <li>
-            <NavLink to="/">Order</NavLink>
+            <NavLink to="/order">Order</NavLink>
           </li>
 
           <li>
-            <NavLink to="/">About</NavLink>
+            <NavLink to="/about">About</NavLink>
           </li>
 
           <li>
-            <NavLink to="/">Contact</NavLink>
+            <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
       </div>

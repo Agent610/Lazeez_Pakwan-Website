@@ -21,10 +21,7 @@ function Catering() {
           Fresh Indian vegetarian and non-vegetarian cuisine prepared for
           gatherings, celebrations, and special events.
         </p>
-
-        <button>Request Catering</button>
       </section>
-      ;
       <section>
         <h2>Events We Cater</h2>
         <ul>
@@ -37,7 +34,6 @@ function Catering() {
           Don't see your event listed ? No problem we will still cater it! :D
         </p>
       </section>
-      ;
       <section>
         <h2>How It Works</h2>
 
@@ -54,7 +50,6 @@ function Catering() {
           <li>We'll confirm the details with you.</li>
         </ol>
       </section>
-      ;
       <section>
         <h2>Request Catering</h2>
         <form>
@@ -68,7 +63,6 @@ function Catering() {
 
           <button type="submit">Submit Request</button>
         </form>
-        ;
       </section>
       {/* Instagram Section (GET THE LINK) */}
       <section>
@@ -81,7 +75,6 @@ function Catering() {
 
         <button>Message us on Instagram</button>
       </section>
-      ;
     </main>
   );
 }

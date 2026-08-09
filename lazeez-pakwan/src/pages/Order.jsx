@@ -11,7 +11,7 @@ function Order() {
 
         <button>Order on Instagram</button>
       </section>
-      ;
+
       <section>
         {/* <h2>How to Order</h2> */}
         <ol>
@@ -31,7 +31,7 @@ function Order() {
           </li>
         </ol>
       </section>
-      ;
+
       <section>
         <h2>Fresh Food Matters</h2>
 
@@ -41,7 +41,7 @@ function Order() {
           before you need it. For catering please give us 2-4 days.
         </p>
       </section>
-      ;
+
       <section>
         <h2>Order Through Instagram</h2>
 
@@ -53,7 +53,7 @@ function Order() {
         {/* <a href="Instagram link" target="_blank" rel="noreferrer"></a> */}
         <button>Message Us on Instagram</button>
       </section>
-      ;
+
       <section>
         <h2>Frequently Asked Questions</h2>
 

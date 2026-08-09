@@ -20,7 +20,7 @@ function About() {
           delicious Indian food that everyone can enjoy.
         </p>
       </section>
-      ;
+
       <section>
         <h2>Our story</h2>
 
@@ -49,7 +49,7 @@ function About() {
           ))}
         </ul>
       </section>
-      ;
+
       <section>
         <h2>Ready to Plan Your Next Event ?</h2>
 
@@ -61,7 +61,6 @@ function About() {
 
         <button>Request Catering</button>
       </section>
-      ;
     </main>
   );
 }
