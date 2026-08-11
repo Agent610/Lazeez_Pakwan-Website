@@ -1,10 +1,23 @@
+import "./Home.css";
+
 function Home() {
   return (
-    <div>
-      <h1>Welcome to Lazeez Pakwan</h1>
+    <main className="home">
+      <section className="home-hero">
+        <div className="home-hero-content">
+          <h1>Welcome to Lazeez Pakwan</h1>
+          <p>
+            Authentic vegetarian and non-vegetarian Indian cuisine. Prepared
+            fresh and with care.
+          </p>
 
-      <p>Authentic vegetarian and non-vegetarian Indian cuisine.</p>
-    </div>
+          <div className="home-hero-buttons">
+            <a href="/order">Order Now</a>
+            <a href="/catering">Catering</a>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
 
