@@ -16,12 +16,12 @@ function Footer() {
           <h3>Quick Links </h3>
 
           <a href="/">Home</a>
-          <a href="/">Menu</a>
-          <a href="/">Specials</a>
-          <a href="/">Catering</a>
-          <a href="/">Order</a>
-          <a href="/">About</a>
-          <a href="/">Contact</a>
+          <a href="/menu">Menu</a>
+          <a href="/specials">Specials</a>
+          <a href="/catering">Catering</a>
+          <a href="/order">Order</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
         </div>
 
         <div className="footer-contact">
