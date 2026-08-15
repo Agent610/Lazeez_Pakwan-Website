@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import "./Home.css";
+// import backgroundImage from "../assets/"
 
 function Home() {
   return (
@@ -12,8 +14,8 @@ function Home() {
           </p>
 
           <div className="home-hero-buttons">
-            <a href="/order">Order Now</a>
-            <a href="/catering">Catering</a>
+            <Link to="/order">Order Now</Link>
+            <Link to="/catering">Catering</Link>
           </div>
         </div>
       </section>
@@ -22,3 +24,10 @@ function Home() {
 }
 
 export default Home;
+
+{
+  /* <section 
+className="home-hero"
+style={{backgroundImage: `url(${backgroundImage})`}}
+/> */
+}

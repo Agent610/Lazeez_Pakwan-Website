@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
@@ -15,13 +16,13 @@ function Footer() {
         <div className="footer-links">
           <h3>Quick Links </h3>
 
-          <a href="/">Home</a>
-          <a href="/menu">Menu</a>
-          <a href="/specials">Specials</a>
-          <a href="/catering">Catering</a>
-          <a href="/order">Order</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/menu">Menu</Link>
+          <Link to="/specials">Specials</Link>
+          <Link to="/catering">Catering</Link>
+          <Link to="/order">Order</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
         </div>
 
         <div className="footer-contact">
@@ -34,6 +35,14 @@ function Footer() {
             in advance anywhere between Monday-Friday 9AM-5PM
           </p>
           {/* Include Instagram link and button for it */}
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="instagram-button"
+          >
+            Message Us on Instagram
+          </a>
         </div>
       </div>
 
