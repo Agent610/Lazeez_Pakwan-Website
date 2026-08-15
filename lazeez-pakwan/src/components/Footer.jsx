@@ -33,6 +33,7 @@ function Footer() {
             Message us on Instagram for orders and inquiries please DM 1-2 days
             in advance anywhere between Monday-Friday 9AM-5PM
           </p>
+          {/* Include Instagram link and button for it */}
         </div>
       </div>
 
