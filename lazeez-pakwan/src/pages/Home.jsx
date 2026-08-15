@@ -5,7 +5,7 @@ function Home() {
     <main className="home">
       <section className="home-hero">
         <div className="home-hero-content">
-          <h1>Welcome to Lazeez Pakwan</h1>
+          <h1>Welcome to lazeez pakwan</h1>
           <p>
             Authentic vegetarian and non-vegetarian Indian cuisine. Prepared
             fresh and with care.
