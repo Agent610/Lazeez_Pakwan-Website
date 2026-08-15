@@ -16,7 +16,6 @@
 .home-hero-content {
   max-width: 800px;
   padding: 2rem;
-  color: blue;
 }
 
 .home-hero-content h1 {
@@ -27,6 +26,7 @@
 .home-hero-content p {
   font-size: 1.25rem;
   margin-bottom: 2rem;
+  color: black;
 }
 
 .home-hero-buttons {
