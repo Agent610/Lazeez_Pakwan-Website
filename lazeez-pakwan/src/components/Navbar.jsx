@@ -1,7 +1,10 @@
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -9,33 +12,56 @@ function Navbar() {
           Lazeez Pakwan
         </NavLink>
 
-        <ul className="navbar-links">
+        <button
+          className="menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
+        >
+          {menuOpen ? "✕" : "☰"}
+        </button>
+
+        <ul className={`navbar-links ${menuOpen ? "open" : ""}`}>
           <li>
-            <NavLink to="/">Home</NavLink>
+            <NavLink to="/" onClick={() => setMenuOpen(false)}>
+              Home
+            </NavLink>
           </li>
 
           <li>
-            <NavLink to="/menu">Menu</NavLink>
+            <NavLink to="/menu" onClick={() => setMenuOpen(false)}>
+              Menu
+            </NavLink>
           </li>
 
           <li>
-            <NavLink to="/specials">Specials</NavLink>
+            <NavLink to="/specials" onClick={() => setMenuOpen(false)}>
+              Specials
+            </NavLink>
           </li>
 
           <li>
-            <NavLink to="/catering">Catering</NavLink>
+            <NavLink to="/catering" onClick={() => setMenuOpen(false)}>
+              Catering
+            </NavLink>
           </li>
 
           <li>
-            <NavLink to="/order">Order</NavLink>
+            <NavLink to="/order" onClick={() => setMenuOpen(false)}>
+              Order
+            </NavLink>
           </li>
 
           <li>
-            <NavLink to="/about">About</NavLink>
+            <NavLink to="/about" onClick={() => setMenuOpen(false)}>
+              About
+            </NavLink>
           </li>
 
           <li>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
+              Contact
+            </NavLink>
           </li>
         </ul>
       </div>
