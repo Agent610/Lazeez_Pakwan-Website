@@ -1,4 +1,6 @@
 //NOT finished yet
+import { Link } from "react-router-dom";
+
 function About() {
   const reasons = [
     "Freshly prepared vegetarian and non-vegetarian Indian cuisine",
@@ -49,7 +51,35 @@ function About() {
           ))}
         </ul>
       </section>
+      {/* <section>
+  <h2>Our Food & Moments</h2>
 
+  <div className="about-gallery">
+    <div className="gallery-item">
+      <img src="/images/placeholder-1.jpg" alt="Lazeez Pakwan food" />
+    </div>
+
+    <div className="gallery-item">
+      <img src="/images/placeholder-2.jpg" alt="Lazeez Pakwan food" />
+    </div>
+
+    <div className="gallery-item">
+      <img src="/images/placeholder-3.jpg" alt="Lazeez Pakwan food" />
+    </div>
+
+    <div className="gallery-item">
+      <img src="/images/placeholder-4.jpg" alt="Lazeez Pakwan food" />
+    </div>
+
+    <div className="gallery-item">
+      <img src="/images/placeholder-5.jpg" alt="Lazeez Pakwan food" />
+    </div>
+
+    <div className="gallery-item">
+      <img src="/images/placeholder-6.jpg" alt="Lazeez Pakwan food" />
+    </div>
+  </div>
+</section> */}
       <section>
         <h2>Ready to Plan Your Next Event ?</h2>
 
@@ -59,7 +89,7 @@ function About() {
           (Best non-veg dish) + (Best Veg dish).[Full in the blanks]
         </p>
 
-        <button>Request Catering</button>
+        <Link to="/catering">Request Catering</Link>
       </section>
     </main>
   );

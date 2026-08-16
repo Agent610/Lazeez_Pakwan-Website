@@ -1,5 +1,7 @@
 // Come back after you get answers to the questions you need to ask
 // NOT Finished yet
+import "./Catering.css";
+
 function Catering() {
   const events = [
     "Birthdays",
@@ -16,23 +18,6 @@ function Catering() {
     <main>
       <section>
         <h1>Catering for Every Occasion</h1>
-
-        <p>
-          Fresh Indian vegetarian and non-vegetarian cuisine prepared for
-          gatherings, celebrations, and special events.
-        </p>
-      </section>
-      <section>
-        <h2>Events We Cater</h2>
-        <ul>
-          {events.map((event) => (
-            <div key={event}>{event}</div>
-          ))}
-        </ul>
-
-        <p>
-          Don't see your event listed ? No problem we will still cater it! :D
-        </p>
       </section>
       <section>
         <h2>How It Works</h2>
@@ -52,19 +37,7 @@ function Catering() {
       </section>
       <section>
         <h2>Request Catering</h2>
-        {/* <form>
-          <input type="text" placeholder="Full Name" />
-
-          <input type="email" placeholder="Email Address" />
-
-          <input type="date" />
-
-          <textarea placeholder="Tell us about your event..."></textarea>
-
-          <button type="submit">Submit Request</button>
-        </form> */}
       </section>
-      {/* Instagram Section (GET THE LINK) */}
       <form className="catering-form">
         <div className="form-group">
           <label htmlFor="name">Name</label>
@@ -135,8 +108,10 @@ function Catering() {
         <button type="submit">Submit Catering Request</button>
       </form>
 
+      <p>Don't see your event listed ? No problem we will still cater it! :D</p>
       <section>
         <h2>Prefer Instagram ?</h2>
+        {/* Instagram Section (GET THE LINK) */}
         <p>
           In the event you prefer contacting us via Instagram ? Sure no problem,
           you can send us a direct message via Instagram to discuss your
