@@ -125,4 +125,4 @@ function Catering() {
 }
 
 export default Catering;
-// To do and find out Catering which cities? And is there a delivery charge | Information in a cater request | Do you provide utensils ? | Up to date menu
+// To do and find out Catering which cities? And is there a delivery charge | Do you provide utensils ? | Up to date menu
