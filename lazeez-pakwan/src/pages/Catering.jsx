@@ -52,7 +52,7 @@ function Catering() {
       </section>
       <section>
         <h2>Request Catering</h2>
-        <form>
+        {/* <form>
           <input type="text" placeholder="Full Name" />
 
           <input type="email" placeholder="Email Address" />
@@ -62,9 +62,79 @@ function Catering() {
           <textarea placeholder="Tell us about your event..."></textarea>
 
           <button type="submit">Submit Request</button>
-        </form>
+        </form> */}
       </section>
       {/* Instagram Section (GET THE LINK) */}
+      <form className="catering-form">
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Your Name"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Your Email"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="event">Event Type</label>
+          <select id="event" name="event" required>
+            <option value="">Select an Event</option>
+            <option value="birthday">Birthday</option>
+            <option value="wedding">Wedding</option>
+            <option value="baby-shower">Baby Shower</option>
+            <option value="corporate">Corporate Event</option>
+            <option value="family-gathering">Family Gathering</option>
+            <option value="religious">Religious Event</option>
+            <option value="holiday">Holiday Party</option>
+            <option value="graduation">Graduation Party</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="date">Event Date</label>
+          <input id="date" name="date" type="date" required />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="guests">Number of Guests</label>
+          <input
+            id="guests"
+            name="guests"
+            type="number"
+            min="1"
+            placeholder="Number of guests"
+            required
+          />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="message">Tell Us About Your Event</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Tell us what you are looking for..."
+            required
+          />
+        </div>
+
+        <button type="submit">Submit Catering Request</button>
+      </form>
+
       <section>
         <h2>Prefer Instagram ?</h2>
         <p>
