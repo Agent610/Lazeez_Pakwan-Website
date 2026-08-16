@@ -37,10 +37,43 @@ function Contact() {
         <h2>Send Us A Message</h2>
 
         <form>
-          <input type="text" placeholder="Your Name" />
-          <input type="number" placeholder="Your Number" />
-          <textarea placeholder="Your Message" />
-          <button>Send Message</button>
+          <div>
+            <label htmlFor="name">Name</label>
+
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+
+          <div>
+            <label htmlFor="phone">Phone Number</label>
+
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="Your Phone Number"
+              required
+            />
+          </div>
+
+          <div>
+            <label htmlFor="message">Message</label>
+
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Send Message</button>
         </form>
       </section>
     </main>
