@@ -1,3 +1,5 @@
+//TODO
+//Add the Background picture
 import { Link } from "react-router-dom";
 import "./Home.css";
 // import backgroundImage from "../assets/"

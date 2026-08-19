@@ -1,4 +1,27 @@
+//TO DO
+//Get the instagram link
+
 function Contact() {
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+
+    const name = formData.get("name");
+    const phone = formData.get("phone");
+    const message = formData.get("message");
+
+    const text = `Hello Lazeez Pakwan!
+
+    Name: ${name}
+    Phone: ${phone}
+
+    Message: ${message}`;
+    const phoneNumber = "14752188753";
+
+    window.location.href = `sms:+${phoneNumber}?body=${encodeURIComponent(text)}`;
+  }
+
   return (
     <main>
       <section>
@@ -15,7 +38,8 @@ function Contact() {
         <div>
           <h3>Instagram</h3>
           <p>Message us directly for orders, catering, and questions.</p>
-          <button>Message Us on Instagram</button>
+          {/* {Add Instagram Link} */}
+          <button type="button">Message Us on Instagram</button>
         </div>
 
         <div>
@@ -36,7 +60,7 @@ function Contact() {
       <section>
         <h2>Send Us A Message</h2>
 
-        <form>
+        <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name</label>
 

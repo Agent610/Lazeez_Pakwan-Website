@@ -1,4 +1,6 @@
-//NOT finished yet
+// TO DO
+// Ask Geeta masi the following:  Why did you start Lazeez Pakwan? | How long have you been cooking professionally?|  What makes your food different? | Do you have a family recipe or tradition you'd like to share?
+// Do the photo gallery
 import { Link } from "react-router-dom";
 
 function About() {
@@ -96,10 +98,3 @@ function About() {
 }
 
 export default About;
-// Ask Geeta masi the following
-// Why did you start Lazeez Pakwan?
-// How long have you been cooking professionally?
-// What inspired the name "Lazeez Pakwan"?
-// What makes your food different?
-// What is your favorite dish to prepare?
-// Do you have a family recipe or tradition you'd like to share?

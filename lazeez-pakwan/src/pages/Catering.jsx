@@ -1,5 +1,6 @@
-// Come back after you get answers to the questions you need to ask
-// NOT Finished yet
+// TO DO
+// Answer: // To do and find out Catering which cities? And is there a delivery charge | Do you provide utensils ? |
+// GET the instagram link
 import "./Catering.css";
 
 function Catering() {
@@ -13,6 +14,34 @@ function Catering() {
     "Holiday Parties",
     "Graduation Parties",
   ];
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const eventType = formData.get("event");
+    const date = formData.get("date");
+    const guests = formData.get("guests");
+    const message = formData.get("message");
+
+    const text = `Hello Lazeez Pakwan ! I would like to request catering.
+
+    Name: ${name}
+    Email: ${email}
+    Event: ${eventType}
+    Event Date: ${date}
+    Number of Guests: ${guests}
+
+    Event Details:
+    ${message}`;
+
+    const phoneNumber = "14752188753";
+
+    window.location.href = `sms:+${phoneNumber}?body=${encodeURIComponent(text)}`;
+  }
 
   return (
     <main>
@@ -38,7 +67,7 @@ function Catering() {
       <section>
         <h2>Request Catering</h2>
       </section>
-      <form className="catering-form">
+      <form className="catering-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input
@@ -125,4 +154,9 @@ function Catering() {
 }
 
 export default Catering;
-// To do and find out Catering which cities? And is there a delivery charge | Do you provide utensils ? | Up to date menu
+
+{
+  /* <a href="YOUR_INSTAGRAM_URL" target="_blank" rel="noopener noreferrer">
+  Message us on Instagram
+</a> */
+}

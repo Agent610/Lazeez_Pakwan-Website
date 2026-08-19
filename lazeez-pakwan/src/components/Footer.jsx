@@ -1,3 +1,5 @@
+//TO DO
+// Get the Instagram Link
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
