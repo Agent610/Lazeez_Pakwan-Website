@@ -1,13 +1,14 @@
-//TODO
-//Add the Background picture
 import { Link } from "react-router-dom";
 import "./Home.css";
-// import backgroundImage from "../assets/"
+import backgroundImage from "../assets/backgroundImage.jpeg";
 
 function Home() {
   return (
     <main className="home">
-      <section className="home-hero">
+      <section
+        className="home-hero"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      >
         <div className="home-hero-content">
           <h1>Welcome to Lazeez Pakwan</h1>
           <p>
@@ -26,10 +27,3 @@ function Home() {
 }
 
 export default Home;
-
-{
-  /* <section 
-className="home-hero"
-style={{backgroundImage: `url(${backgroundImage})`}}
-/> */
-}
