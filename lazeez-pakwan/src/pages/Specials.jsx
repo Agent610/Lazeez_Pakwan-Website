@@ -35,3 +35,5 @@ function Specials() {
     </main>
   );
 }
+
+export default Specials;
