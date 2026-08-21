@@ -1,9 +1,9 @@
-//TO DO
-// Get the Instagram Link
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
+  const instagramUrl = "https://www.instagram.com/lazeez_pakwan/";
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -36,9 +36,9 @@ function Footer() {
             Message us on Instagram for orders and inquiries please DM 1-2 days
             in advance anywhere between Monday-Friday 9AM-5PM
           </p>
-          {/* Include Instagram link and button for it */}
+
           <a
-            href="#"
+            href={instagramUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="instagram-button"
