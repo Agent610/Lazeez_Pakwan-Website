@@ -59,6 +59,26 @@
   font-weight: 700;
 }
 
+.menu-pdf {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 2rem;
+}
+
+.menu-pdf-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.menu-pdf-buttons a {
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
 /* Tablet */
 @media (max-width: 768px) {
   .menu-section {
@@ -90,5 +110,14 @@
 
   .menu-item {
     padding: 1rem;
+  }
+
+  .menu-pdf-buttons {
+    flex-direction: column;
+  }
+
+  .menu-pdf-buttons a {
+    width: 100%;
+    box-sizing: border-box;
   }
 }

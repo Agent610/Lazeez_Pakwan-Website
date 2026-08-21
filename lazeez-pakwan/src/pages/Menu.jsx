@@ -245,6 +245,23 @@ function Menu() {
           </div>
         </div>
       </section>
+      <section className="menu-pdf">
+        <h2>Want the Full Menu ?</h2>
+        <p>View or download our menu as a PDF.</p>
+        <div className="menu-pdf-buttons">
+          <a
+            href="/Lazeez_Pakwan_Menu.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Menu PDF
+          </a>
+
+          <a href="/Lazeez_Pakwan_Menu.pdf" download>
+            Download Menu PDF
+          </a>
+        </div>
+      </section>
     </main>
   );
 }
