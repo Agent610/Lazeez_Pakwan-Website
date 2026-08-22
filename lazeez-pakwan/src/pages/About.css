@@ -53,6 +53,11 @@
   object-fit: cover;
 }
 
+.gallery-item h3 {
+  text-align: center;
+  margin: 0.75rem 0 0;
+}
+
 /* Tablet */
 @media (max-width: 768px) {
   .about {

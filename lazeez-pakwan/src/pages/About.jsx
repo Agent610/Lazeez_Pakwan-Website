@@ -5,7 +5,7 @@ import MuttonCurry from "../assets/Mutton-Curry.jpeg";
 import CheeseTomato from "../assets/Cheese-Tomato.jpeg";
 import IdliSambar from "../assets/Idli-Sambar.jpeg";
 import ChannaMasala from "../assets/Channa-Masala.jpeg";
-import BhindiMasla from "../assets/Bhindi-Masala.jpeg";
+import BhindiMasala from "../assets/Bhindi-Masala.jpeg";
 import ChickenBiryani from "../assets/Chicken-Biryani.jpeg";
 
 function About() {
@@ -93,36 +93,42 @@ function About() {
         <div className="about-gallery">
           <div className="gallery-item">
             <img src={MuttonCurry} alt="Mutton Curry" />
+            <h3>Mutton Curry</h3>
           </div>
         </div>
 
         <div className="about-gallery">
           <div className="gallery-item">
             <img src={CheeseTomato} alt="Chesse Tomato" />
+            <h3>Cheese Tomato</h3>
           </div>
         </div>
 
         <div className="about-gallery">
           <div className="gallery-item">
             <img src={IdliSambar} alt="Idli Sambar" />
+            <h3>Idli Sambar</h3>
           </div>
         </div>
 
         <div className="about-gallery">
           <div className="gallery-item">
             <img src={ChannaMasala} alt="Channa Masala" />
+            <h3>Channa Masala</h3>
           </div>
         </div>
 
         <div className="about-gallery">
           <div className="gallery-item">
-            <img src={BhindiMasla} alt="Bhindi Masala" />
+            <img src={BhindiMasala} alt="Bhindi Masala" />
+            <h3>Bhindi Masala</h3>
           </div>
         </div>
 
         <div className="about-gallery">
           <div className="gallery-item">
             <img src={ChickenBiryani} alt="Chicken Biryani" />
+            <h3>Chicken Biryani</h3>
           </div>
         </div>
       </section>
