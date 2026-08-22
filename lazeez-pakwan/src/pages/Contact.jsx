@@ -1,7 +1,8 @@
-//TO DO
-//Get the instagram link
+import "./Contact.css";
 
 function Contact() {
+  const instagramUrl = "https://www.instagram.com/lazeez_pakwan/";
+
   function handleSubmit(event) {
     event.preventDefault();
 
@@ -35,11 +36,14 @@ function Contact() {
 
       <section>
         <h2>Connect with us</h2>
+
         <div>
           <h3>Instagram</h3>
           <p>Message us directly for orders, catering, and questions.</p>
-          {/* {Add Instagram Link} */}
-          <button type="button">Message Us on Instagram</button>
+
+          <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
+            Message Us on Instagram
+          </a>
         </div>
 
         <div>

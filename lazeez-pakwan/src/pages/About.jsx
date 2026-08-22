@@ -1,7 +1,12 @@
-// TO DO
-// Ask Geeta masi the following:  Why did you start Lazeez Pakwan? | How long have you been cooking professionally?|  What makes your food different? | Do you have a family recipe or tradition you'd like to share?
-// Do the photo gallery
 import { Link } from "react-router-dom";
+import "./About.css";
+
+import MuttonCurry from "../assets/Mutton-Curry.jpeg";
+import CheeseTomato from "../assets/Cheese-Tomato.jpeg";
+import IdliSambar from "../assets/Idli-Sambar.jpeg";
+import ChannaMasala from "../assets/Channa-Masala.jpeg";
+import BhindiMasla from "../assets/Bhindi-Masala.jpeg";
+import ChickenBiryani from "../assets/Chicken-Biryani.jpeg";
 
 function About() {
   const reasons = [
@@ -13,7 +18,7 @@ function About() {
   ];
 
   return (
-    <main>
+    <main className="about">
       <section>
         <h1>About Lazeez Pakwan</h1>
 
@@ -29,10 +34,38 @@ function About() {
         <h2>Our story</h2>
 
         <p>
+          Lazeez Pakwan was created with one goal: To make authentic Indian food
+          that brings the flavors of India to families, friends, and
+          communities.
+        </p>
+
+        <p>
+          With 10 years of professional cooking experience, every dish is
+          prepared with care and attention to the perfect combination of spices
+          and flavors.
+        </p>
+
+        <p>
           Lazeez Pakwan is dedicated to prepare fresh, flavorful vegetarian and
           non-vegetarian Indian cuisine for families, friends, and communities.
           Every order is made with care and prepared fresh for your special
           occassion or just night in.
+        </p>
+      </section>
+
+      <section>
+        <h2>What makes our Food different ?</h2>
+        <p>
+          We focus on creating authentic Indian food with the perfect balance of
+          spices and flavors inspired by the food of India.
+        </p>
+      </section>
+
+      <section>
+        <h2>Family Recipes & Traditions</h2>
+        <p>
+          Some of our family favorites include: Cheese Tomato and Butter
+          Chicken. Our Butter Chicken can also be prepared with goat meat.
         </p>
       </section>
       <section>
@@ -53,42 +86,54 @@ function About() {
           ))}
         </ul>
       </section>
-      {/* <section>
-  <h2>Our Food & Moments</h2>
 
-  <div className="about-gallery">
-    <div className="gallery-item">
-      <img src="/images/placeholder-1.jpg" alt="Lazeez Pakwan food" />
-    </div>
+      <section>
+        <h2>Our Food</h2>
 
-    <div className="gallery-item">
-      <img src="/images/placeholder-2.jpg" alt="Lazeez Pakwan food" />
-    </div>
+        <div className="about-gallery">
+          <div className="gallery-item">
+            <img src={MuttonCurry} alt="Mutton Curry" />
+          </div>
+        </div>
 
-    <div className="gallery-item">
-      <img src="/images/placeholder-3.jpg" alt="Lazeez Pakwan food" />
-    </div>
+        <div className="about-gallery">
+          <div className="gallery-item">
+            <img src={CheeseTomato} alt="Chesse Tomato" />
+          </div>
+        </div>
 
-    <div className="gallery-item">
-      <img src="/images/placeholder-4.jpg" alt="Lazeez Pakwan food" />
-    </div>
+        <div className="about-gallery">
+          <div className="gallery-item">
+            <img src={IdliSambar} alt="Idli Sambar" />
+          </div>
+        </div>
 
-    <div className="gallery-item">
-      <img src="/images/placeholder-5.jpg" alt="Lazeez Pakwan food" />
-    </div>
+        <div className="about-gallery">
+          <div className="gallery-item">
+            <img src={ChannaMasala} alt="Channa Masala" />
+          </div>
+        </div>
 
-    <div className="gallery-item">
-      <img src="/images/placeholder-6.jpg" alt="Lazeez Pakwan food" />
-    </div>
-  </div>
-</section> */}
+        <div className="about-gallery">
+          <div className="gallery-item">
+            <img src={BhindiMasla} alt="Bhindi Masala" />
+          </div>
+        </div>
+
+        <div className="about-gallery">
+          <div className="gallery-item">
+            <img src={ChickenBiryani} alt="Chicken Biryani" />
+          </div>
+        </div>
+      </section>
+
       <section>
         <h2>Ready to Plan Your Next Event ?</h2>
 
         <p>
           Whether you're celebrating with your family, friends, or even
           co-workers, we'd love to help make your event memorable. From our
-          (Best non-veg dish) + (Best Veg dish).[Full in the blanks]
+          Mutton Curry Fish Fry and Channa Masala.
         </p>
 
         <Link to="/catering">Request Catering</Link>

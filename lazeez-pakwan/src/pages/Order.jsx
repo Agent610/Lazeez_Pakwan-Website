@@ -1,8 +1,10 @@
-//TO DO
-// Get the instagram link
+import "./Order.css";
+
 function Order() {
+  const instagramUrl = "https://www.instagram.com/lazeez_pakwan/";
+
   return (
-    <main>
+    <main className="order">
       <section>
         <h1>Place an Order</h1>
 
@@ -11,11 +13,12 @@ function Order() {
           and non-vegetarian. Please contact us to place your order.
         </p>
 
-        <button>Order on Instagram</button>
+        <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
+          Order on Instagram
+        </a>
       </section>
 
       <section>
-        {/* <h2>How to Order</h2> */}
         <ol>
           <li>Send us a message on Instagram or use our contact form.</li>
 
@@ -52,8 +55,9 @@ function Order() {
           Instagram.
         </p>
 
-        {/* <a href="Instagram link" target="_blank" rel="noreferrer"></a> */}
-        <button>Message Us on Instagram</button>
+        <a href={instagramUrl} target="_blank" rel="noreferrer">
+          Message Us on Instagram
+        </a>
       </section>
 
       <section>

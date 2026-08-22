@@ -1,6 +1,3 @@
-// TO DO
-// Answer: // To do and find out Catering which cities? And is there a delivery charge | Do you provide utensils ? |
-// GET the instagram link
 import "./Catering.css";
 
 function Catering() {
@@ -14,6 +11,8 @@ function Catering() {
     "Holiday Parties",
     "Graduation Parties",
   ];
+
+  const instagramUrl = "https://www.instagram.com/lazeez_pakwan/";
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -64,9 +63,11 @@ function Catering() {
           <li>We'll confirm the details with you.</li>
         </ol>
       </section>
+
       <section>
         <h2>Request Catering</h2>
       </section>
+
       <form className="catering-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name</label>
@@ -138,16 +139,41 @@ function Catering() {
       </form>
 
       <p>Don't see your event listed ? No problem we will still cater it! :D</p>
+
+      <section>
+        <h2>Our Catering Area</h2>
+        <p>We currently cater to customers in and around:</p>
+
+        <ul>
+          <li>Danbury, CT</li>
+          <li>Bethel, CT</li>
+          <li>Brookfield, CT</li>
+          <li>Ridgefield, CT</li>
+          <li>New Fairfield, CT</li>
+          <li>Newtown, CT</li>
+        </ul>
+
+        <p>
+          <strong>Delivery:</strong> Not currently available.
+        </p>
+
+        <p>
+          <strong>Utensils:</strong> Not provided.
+        </p>
+      </section>
+
       <section>
         <h2>Prefer Instagram ?</h2>
-        {/* Instagram Section (GET THE LINK) */}
+
         <p>
           In the event you prefer contacting us via Instagram ? Sure no problem,
           you can send us a direct message via Instagram to discuss your
           catering needs.
         </p>
 
-        <button>Message us on Instagram</button>
+        <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
+          Message Us on Instagram
+        </a>
       </section>
     </main>
   );
